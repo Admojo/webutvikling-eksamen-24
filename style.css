@@ -1,0 +1,52 @@
+body{
+    /* display: grid; */
+    font-size: 16px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;      
+    }
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+#grid-container {
+    display: grid;
+}
+
+li {
+    list-style: none;
+}
+
+.header-global, main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    /* flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline; */
+    
+}
+
+/* main {
+    display: flex;
+    flex-direction: column;
+} */
+
+.process-purchase, .process-create-profile{
+    background-color: green;
+}
+
+#create-profile {
+    background-color: aliceblue;
+}
