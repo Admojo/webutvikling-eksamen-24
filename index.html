@@ -31,22 +31,104 @@
                 </form>
                 <ul>
                     <li><a class="nav-bar-item" href=""></a></li>
-                    <li><a href="index.html#hjem" > Hjem </a></li>
-                    <li><a href="index.html#produkter" > Produkter </a></li>
+                    <li><a href="index.html" > Hjem </a></li>
+                    <li><a href="index.html#products" > Produkter </a></li>
                      <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
                      <a class="logo" href="index.html"> Logo </a>
-                    <li><a href="index.html#kategorier" > Kategorier </a></li>
-                    <li><a href="index.html#kontaktoss" > Kontakt oss </a></li>
+                    <li><a href="index.html#categories" > Kategorier </a></li>
+                    <li><a href="index.html#contact" > Kontakt oss </a></li>
                 </ul>
                 <div class="icon-group">
-                    <a class="logo" href="#kontaktoss.html"><i class="fa-light fa-user"></i></a>
-                    <a class="logo" href="index.html"><i class="fa-regular fa-heart"></i></a>
-                    <a class="logo" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="logo" href="/html/customerPage.html"><i class="fa-light fa-user"></i></a>
+                    <a class="logo" href="/index.html#recomendations"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" href="./html/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>  
             </nav>
         </header>
         <main>
-            <section></section>
+            <section class="slider-carousel-top" id="home">
+                <header><h1> Tittel slider </h1></header>
+                <article></article>
+                <!-- https://www.youtube.com/watch?v=N6v7HQiCNiQ -->       
+                <header>
+                    <h1> Våre mest populære produkter </h1>
+                </header>
+                <article>
+                    <p> Oppdag det beste av norsk kvalitet </p>
+                </article>
+                <section>
+                    <button href="index.html#home">New Product</button>
+                    <button>Special offers </button>
+                    <button>Best sellers </button>
+                </section>
+            </section>
+            <section class="products-list">
+                <article class="product-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                    <header>
+                        <h4>Product name</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                </article>
+            </section>
+            <section class="category-intro" id="categories">
+                <header>
+                    <h1>Våre mest populære kategorier</h1>
+                </header>
+                <article>
+                    <p>Vi har et godt utvalg av populære kategorier</p>
+                </article>
+            </section>
+            <section class="category-list">
+                <section>
+                    <!-- kilde:https://www.youtube.com/watch?v=QaMMWRpwOhE -->
+                    <iframe width="230" height="157" src="https://www.youtube.com/embed/N6v7HQiCNiQ?si=V5KIbd4PUNrRiRtz&amp;controls=0&amp;start=1&modestbranding=0&color=1&" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </section>
+                <header>
+                    <h1> Tittel seksjon </h1>
+                </header>
+                <article>
+                    <p> Innhold, tekst </p>
+                </article>
+                <section>
+                </section>
+            </section>
+            <section class="slider-carousel-bottom-wrapper" id="recomendations">
+                <header><h1>Anmeldelser</h1></header>
+                <article class="review-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" id="profile-picture">
+                    <header>
+                        <h4>Rolf Rullufs</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </article>
+            </section>
         </main>
         <footer>
                 <!-- logo -->

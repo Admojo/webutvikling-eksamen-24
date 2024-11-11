@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <script src="https://kit.fontawesome.com/9380757250.js" crossorigin="anonymous"></script>
+        <title> Nettbutikk </title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id ="grid-container">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <header class="header-global">
+             <!-- Nav bar  -->
+            <nav class ="nav-bar-global"> 
+                <!-- Søkefelt her  -->
+                <!-- Form er hentet herfra: https://github.com/ackarlse/Webutvikling2024Anncha/blob/main/GRID/index.html -->
+                <!-- HIdden button: https://stackoverflow.com/questions/477691/submitting-a-form-by-pressing-enter-without-a-submit-button -->
+                <form>
+                    <!-- <label for="search">search</label> -->
+                    <input aria-label="search field" type="search" id="search" name="search" placeholder="Søk her">
+                    <input aria-label="search button" type="submit" hidden="true" />
+                    <!-- <button aria-label="search button">Search</button> -->
+                </form>
+                <ul>
+                    <li><a class="nav-bar-item" href=""></a></li>
+                    <li><a href="/index.html" > Hjem </a></li>
+                    <li><a href="/index.html#products" > Produkter </a></li>
+                     <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
+                     <a class="logo" href="/index.html"> Logo </a>
+                    <li><a href="/index.html#categories" > Kategorier </a></li>
+                    <li><a href="/index.html#contact" > Kontakt oss </a></li>
+                </ul>
+                <div class="icon-group">
+                    <a class="logo" href="/index.html#contact"><i class="fa-light fa-user"></i></a>
+                    <a class="logo" href="/index.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" href="/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                </div>  
+            </nav>
+        </header>
+        <main>
+            <section class="slider-banner-top">
+                <header><h1> Tittel slider </h1></header>
+                <article></article>
+            </section>
+            <section class="products-intro">
+                <header>
+                    <h1> Tittel seksjon </h1>
+                </header>
+                <article>
+                    <p> Innhold, tekst </p>
+                </article>
+                <section>
+                    <button href="index.html#home"> knapp </button>
+                    <button> knapp </button>
+                    <button> knapp </button>
+                </section>
+            </section>
+            <section class="products-list">
+                <header>
+                    <h1> Tittel seksjon </h1>
+                </header>
+                <article>
+                    <p> Innhold, tekst </p>
+                </article>
+                <section>
+                </section>
+            </section>
+            <section class="category-intro">
+                <header>
+                    <h1> Tittel seksjon </h1>
+                </header>
+                <article>
+                    <p> Innhold, tekst </p>
+                </article>
+                <section>
+                    <button> knapp </button>
+                    <button> knapp </button>
+                    <button> knapp </button>
+                </section>
+            </section>
+            <section class="category-list">
+                <header>
+                    <h1> Tittel seksjon </h1>
+                </header>
+                <article>
+                    <p> Innhold, tekst </p>
+                </article>
+                <section>
+                </section>
+            </section>
+            <section class="slider-banner-bottom">
+                <header><h1> Tittel seksjon </h1></header>
+                <article></article>
+            </section>
+        </main>
+        <footer>
+               <!-- logo -->
+               <section>
+                <a class="logo" href="index.html"> Logo </a>
+                <p> Et flott ordtak om butikken vår </p>
+             </section>
+             <!-- #contact -->
+            <section class="contact-us-wrapper">
+                <header id="contact"><h4>Kontakt</h4></header>
+                <article><i class="fa-solid fa-location-dot"></i><address><p>Adresse:</p><p>B R A veien 4, 1783 Halden</p></address></article>
+                <article><i class="fa-solid fa-phone"></i><p>Telefon:</p><p>815 493 00</p></article>
+                <article><i class="fa-solid fa-envelope"></i><p>E-post:</p><a href="mailto:halden@hiof.no">halden@hiof.no</a></article>
+                <article><i class="fa-solid fa-clock"></i><p>Åpningstider:</p><p> Mandag - Fredag: 08.00 - 16.00 </p></article>
+            </section>
+              <!-- Snarveier -->
+            <section>
+                <header><h4>Snarveier</h4></header>
+                <ul>
+                    <li><a href="index.html#products" > Produkter </a></li>
+                    <li><a href="index.html#categories" > Kategorier </a></li>
+                    <li><a href="index.html#contact" > Kontakt oss </a></li>
+                </ul>
+            </section>
+               <!-- SoMe -->
+            <section id="footer-item">   
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </section>
+        </footer>
+        <script src="" async defer></script>
+    </body>
+</html>
+
+
+
