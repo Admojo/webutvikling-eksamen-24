@@ -17,13 +17,6 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
-        <!-- TODO: Krav E: 
-        Globalt Headerområde
-            • Alle elementene skal ligge under hverandre og det skal våre god nok luft og trykk
-            flate på det som er navigasjon lenker.
-            • Søkefelter og knappen tilhørende søkefeltet skal ha lik mengde padding og endret
-            border. -->
         <header class="header-global">
              <!-- Nav bar  -->
             <nav class ="nav-bar-global"> 
@@ -43,7 +36,7 @@
                      <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
                      <a class="logo" href="index.html"> Logo </a>
                     <li><a href="index.html#categories" > Kategorier </a></li>
-                    <li><a href="index.html#contact" > Kontakt oss </a></li>
+                    <li><a href="#contact" > Kontakt oss </a></li>
                 </ul>
                 <div class="icon-group">
                     <a class="logo" href="customerPage.html"><i class="fa-solid fa-user"></i></a>
@@ -53,13 +46,31 @@
             </nav>
         </header>
         <main>
-            <section class="slider-carousel-top" id="home">
-                <header><h1> Tittel slider </h1></header>
-                <article> 
-                    <!-- TODO: Image slider insert here  -->
-                </article>
-                <!-- https://www.youtube.com/watch?v=N6v7HQiCNiQ -->       
+
+            <!-- TODO: en brødsmulesti (breadcrumb) som navigerer til hjem,
+                kategori, og selve produktsiden (se bilder av produktsiden). -->
+
+
+            <section class ="product-info">
+
+                <!-- TODO: Et område med produktbilder, inkludert ett stort bilde og tre mindre. -->
+                <section class ="product-img-catalog">
+
+
+                </section>
+
+                <!-- TODO: Et område med produktnavn som overskrift, lenke til merke, pris,
+                fargeinformasjon, nedtrekksmeny for valg av størrelse, og en "legg i
+                handlekurv"-knapp (mer innehold inkluderes på høyere karakternivå). -->
+                <aside class="product-details">
+                  
+                </aside>
+
             </section>
+
+            <!-- TODO: Produktsiden skal ha et sideområde for relaterte eller lignende produkter, med
+            minimum 4 produktkort tilsvarende de som brukes på forsiden under seksjonen
+            "de mest populære" (mer innehold inkluderes på høyere karakternivå). -->
             <section class="product-sort" id="products">
                 <header>
                     <h1> Våre mest populære produkter </h1>
@@ -74,21 +85,13 @@
                 </section>
             </section>
             <section class="products-list" >
-                <article class="product-card" href="product.html">
+                <article class="product-card">
                     <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
                     <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
                     <header>
-                        <a href="product.html"><h4>Product name</h4></a>
-                        <h4><a href="product.html">Product name</a></h4>
+                        <h4>Product name</h4>
                         <p>Kr 1999</p>
                     </header>
-                    <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
-                    <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
-                    <label class="favourite-toggle">
-                        <input type="checkbox" id="favourite-toggle" hidden>
-                        <i class="fa-regular fa-heart unchecked"></i>
-                        <i class="fa-solid fa-heart checked"></i>
-                    </label>
                     <section class="review-stars">
                         <p>
                             <i class="fa-solid fa-star"></i>
@@ -183,129 +186,8 @@
                     </p>
                 </article>
             </section>
-            <section class="category-intro" id="categories">
-                <header>
-                    <h1>Våre mest populære kategorier</h1>
-                </header>
-                <article>
-                    <p>Vi har et godt utvalg av populære kategorier</p>
-                </article>
-            </section>
-            <section class="category-list">
-                <section>
-                    <!-- kilde:https://www.youtube.com/watch?v=QaMMWRpwOhE -->
-                    <iframe width="230" height="157" src="https://www.youtube.com/embed/N6v7HQiCNiQ?si=V5KIbd4PUNrRiRtz&amp;controls=0&amp;start=1&modestbranding=0&color=1&" 
-                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                    clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </section>
-                <header>
-                    <h1> Tittel seksjon </h1>
-                </header>
-                <article>
-                    <p> Innhold, tekst </p>
-                </article>
-                <section>
-                </section>
-            </section>
-            <section class="slider-carousel-bottom-wrapper" id="recomendations">
-                <header><h1>Anmeldelser</h1></header>
-                <article class="review-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" id="profile-picture">
-                    <header>
-                        <h4>Rolf Rullufs</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </article>
-                <article class="review-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" id="profile-picture">
-                    <header>
-                        <h4>Rolf Rullufs</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                        <article id="review-stars">
-                            <p>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </p>
-                        </article>
-                    <article id="review-text">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                            <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                            in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </article>
-                </article>
-                <article class="review-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" id="profile-picture">
-                    <header>
-                        <h4>Rolf Rullufs</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </article>
-                <article class="review-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" id="profile-picture">
-                    <header>
-                        <h4>Rolf Rullufs</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
-                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
-                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
-                        in culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                </article>
-            </section>
+            
+            
         </main>
         <footer>
                 <!-- logo -->

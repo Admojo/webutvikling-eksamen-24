@@ -39,27 +39,34 @@ main > section > header > h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
     /* flex-wrap: wrap;
     justify-content: space-between;
     align-items: baseline; */
+}
+
+.header-global > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.nav-bar-global > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(233, 156, 169, 0.214);
 }
 
 .slider-carousel-top {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    border-width: 5px;
-    border-style: solid;
-    border-color: rgb(204, 151, 90);
+    border: 1px solid rgba(0, 0, 0, 0.1);
 
 }
 
 .product-sort{
     display: grid;
     justify-content: center;
-    border-width: 20px;
-    border-style: solid;
-    border-color: rgb(198, 69, 49);
+    border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 5rem;
     gap: 20px;
 
@@ -103,11 +110,50 @@ main > section > header > h1 {
 .product-card {
     display: flex;
     justify-content: center;
+    background-color: aliceblue;
+    
+}
+ /* .product-card > #favourite {
+    color: black;
+    ::after {
+        color: red;
+    }
+ } */
+
+ .product-card .favourite-toggle {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+
+    .unchecked {
+        color: black;
+        display: inline;
+    }
+
+    .checked {
+        color: red;
+        display: none;
+    }
+}
+
+.product-card .favourite-toggle input:checked ~ .unchecked {
+    display: none; 
+}
+
+.product-card .favourite-toggle input:checked ~ .checked {
+    display: inline; 
+}
+
+
+.product-card > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .product-card > header {
     display: grid;
     justify-content: space-evenly;
+    
 }
 
 .product-card > .review-stars{
@@ -115,10 +161,37 @@ main > section > header > h1 {
     /* justify-content: space-between; */
 }
 
+.category-intro {
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-intro > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-items: center;
+}
+
+.category-list {
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-list > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 .slider-carousel-bottom-wrapper {
     display: grid;
     justify-content: center;
+}
 
+.slider-carousel-bottom-wrapper > header {
+    border: 1px solid rgba(170, 12, 12, 0.759);
+
+    > * {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: aliceblue;
+    }
 }
 
 .slider-carousel-bottom-wrapper > .review-card {
@@ -128,7 +201,6 @@ main > section > header > h1 {
     padding: 10px;
     gap: 20px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-
 }
 
 .review-card {
@@ -151,6 +223,11 @@ main > section > header > h1 {
 
 }
 
+.review-card > * {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 
 li {
     list-style: none;
@@ -158,9 +235,16 @@ li {
 
 footer {
     display: flex;
-    background-color: bisque;
+    background-color: rgba(255, 228, 196, 0.173);
     justify-content: flex-start;
     align-items: baseline;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+footer > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .responsive {

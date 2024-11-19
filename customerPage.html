@@ -31,74 +31,65 @@
                 </form>
                 <ul>
                     <li><a class="nav-bar-item" href=""></a></li>
-                    <li><a href="/index.html" > Hjem </a></li>
-                    <li><a href="/index.html#products" > Produkter </a></li>
+                    <li><a href="index.html#home" > Hjem </a></li>
+                    <li><a href="index.html#products" > Produkter </a></li>
                      <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
-                     <a class="logo" href="/index.html"> Logo </a>
-                    <li><a href="/index.html#categories" > Kategorier </a></li>
-                    <li><a href="/index.html#contact" > Kontakt oss </a></li>
+                     <a class="logo" href="index.html"> Logo </a>
+                    <li><a href="index.html#categories" > Kategorier </a></li>
+                    <li><a href="#contact" > Kontakt oss </a></li>
                 </ul>
                 <div class="icon-group">
-                    <a class="logo" href="/index.html#contact"><i class="fa-light fa-user"></i></a>
-                    <a class="logo" href="/index.html"><i class="fa-regular fa-heart"></i></a>
-                    <a class="logo" href="/checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <a class="logo" href="index.html#contact"><i class="fa-solid fa-user"></i></a>
+                    <a class="logo" href="index.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </div>  
             </nav>
         </header>
         <main>
-            <section class="slider-banner-top">
-                <header><h1> Tittel slider </h1></header>
-                <article></article>
-            </section>
-            <section class="products-intro">
+            <section class="customer-info-wrapper" id="create-profile">
+                <!-- <section><h1> Dine Opplysninger</h1></section> -->
+                <section><h1> Opprett profil </h1></section>
+                <!-- Kilde / inspirasjon: https://www.w3schools.com/html/html_forms.asp -->
+                    <form href="/checkout.html#delivery">
+                        <section class="customer-name">
+                            <header><h3>Leveringsadresse</h3></header>
+                            <label for="fname">Fornavn</label><br>
+                            <input type="text" id="fname" name="fname" value="Nora *"><br>
+                            <label for="lname">Etternavn</label><br>
+                            <input type="text" id="lname" name="lname" value="Nordmann *"><br><br>
+                        </section>
+                        <section class="customer-delivery-adress">
+                            <label for="street">Gateaddresse</label><br>
+                            <input type="text" id="street" name="street" value=" B R A veien 4 *"><br>
+                        </section>
+                        <section>
+                            <!-- PostNr -> Endre til "nedtrekksliste" -->
+                            <label for="zipcode">Postnummer</label><br>
+                            <input type="text" id="zipcode" name="zipcode" value="1783 *"><br><br>
+                            <label for="postal">Poststed</label><br>
+                            <input type="text" id="postal" name="postal" value="Halden *"><br><br>
+                        </section>
+                        <section class="customer-contact-info">
+                            <header><h3>Kontaktinformasjon</h3></header>
+                            <label for="email">E-post</label><br>
+                            <input type="text" id="email" name="email" value="Nora.nordmann@hiof.no *"><br><br>
+                            <label for="phone">Telefon</label><br>
+                            <input type="text" id="phone" name="phone" value="+47 23 ** ** 21"><br><br>
+                        </section>
+                        <input type="submit" value="Lagre">
+                    </form>
+                    <input type="submit" value="oppdater profil" href="customerPage.html#confirm">
+               </section>
+               <section class="process-create-profile" id="confirm">
                 <header>
-                    <h1> Tittel seksjon </h1>
+                    <h1> Thanks for creating a profile</h1>
                 </header>
                 <article>
-                    <p> Innhold, tekst </p>
+                    <p> Please confirm your email in your inbox </p>
                 </article>
                 <section>
-                    <button href="index.html#home"> knapp </button>
-                    <button> knapp </button>
-                    <button> knapp </button>
+                    <button href="index.html#home"> Home</button>
                 </section>
-            </section>
-            <section class="products-list">
-                <header>
-                    <h1> Tittel seksjon </h1>
-                </header>
-                <article>
-                    <p> Innhold, tekst </p>
-                </article>
-                <section>
-                </section>
-            </section>
-            <section class="category-intro">
-                <header>
-                    <h1> Tittel seksjon </h1>
-                </header>
-                <article>
-                    <p> Innhold, tekst </p>
-                </article>
-                <section>
-                    <button> knapp </button>
-                    <button> knapp </button>
-                    <button> knapp </button>
-                </section>
-            </section>
-            <section class="category-list">
-                <header>
-                    <h1> Tittel seksjon </h1>
-                </header>
-                <article>
-                    <p> Innhold, tekst </p>
-                </article>
-                <section>
-                </section>
-            </section>
-            <section class="slider-banner-bottom">
-                <header><h1> Tittel seksjon </h1></header>
-                <article></article>
             </section>
         </main>
         <footer>
@@ -134,6 +125,8 @@
         <script src="" async defer></script>
     </body>
 </html>
+
+
 
 
 
