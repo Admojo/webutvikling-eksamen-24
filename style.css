@@ -22,11 +22,118 @@ h3{
 #grid-container {
     display: grid;
     gap: 5rem 10rem;
+    grid-template-areas: "header" 
+                        "main"
+                        "aside" 
+                        "footer";
+    grid-template-columns: 3fr;
     
 }
-main:nth-child() {
-    
+
+.header-global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline; */
 }
+
+.slider-carousel-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(204, 151, 90);
+
+}
+
+.product-sort{
+    display: grid;
+    justify-content: center;
+    border-width: 20px;
+    border-style: solid;
+    border-color: rgb(198, 69, 49);
+    padding: 5rem;
+    gap: 20px;
+
+}
+
+.product-sort > * {
+    display: flex;
+    margin: 10px 0;
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-sort > section > button {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.products-list{
+    display: grid;
+    align-self: auto;
+
+}
+
+.products-list > .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    display: flex;
+    justify-content: center;
+    border-width: 10px;
+    border-style: solid;
+    border-color: blue;
+
+}
+
+.slider-carousel-bottom-wrapper {
+    display: grid;
+    justify-content: center;
+
+}
+
+.slider-carousel-bottom-wrapper > .review-card {
+    margin: 10px 0;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.review-card {
+    display: flex;
+    justify-items: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(204, 151, 90);
+
+        #profile-picture{
+            width: auto;
+            height: fit-content;
+        }
+        header {
+            align-self: baseline;
+        }
+        #review-stars{
+            align-items: baseline;
+        }
+
+}
+
 
 li {
     list-style: none;
@@ -38,16 +145,6 @@ footer {
     justify-content: flex-start;
     align-items: baseline;
 }
-.header-global, main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    /* flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: baseline; */
-    
-}
 
 .responsive {
     width: 100%;
@@ -55,10 +152,6 @@ footer {
     max-width: 20rem;
   }
 
-/* main {
-    display: flex;
-    flex-direction: column;
-} */
 
 .process-purchase, .process-create-profile{
     background-color: green;
@@ -74,9 +167,9 @@ footer {
 
 }
 
-ABC Diatype, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 
+/* ABC Diatype, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 
 Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 
 
 Roobert, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, 
-Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
