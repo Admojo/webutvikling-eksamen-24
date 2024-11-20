@@ -1,1 +1,103 @@
 Her kommer avklaringer
+
+
+
+
+
+
+
+
+
+Kilder: 
+
+
+
+after the button is pressed, I want to have a pop up box with text, saying "added to cart" 
+
+how to fix?
+
+   <form action="/action_page.php">
+                            <label for="size"></label>
+                            <select name="size" id="size">
+                              <option value="xs">Extra small</option>
+                              <option value="s">Small</option>
+                              <option value="m">Medium</option>
+                              <option value="l">Large</option>
+                              <option value="xl">Extra Large</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Legg i handlekurv">
+                        </form>   
+ChatGPT said:
+ChatGPT
+To implement a pop-up box saying "Added to cart" when the button is pressed without using JavaScript, you can use pure HTML and CSS. This involves leveraging the :target pseudo-class and anchor links. Here's how you can fix it:
+
+Updated Code
+HTML
+html
+Copy code
+<form action="#popup">
+    <label for="size"></label>
+    <select name="size" id="size">
+        <option value="xs">Extra small</option>
+        <option value="s">Small</option>
+        <option value="m">Medium</option>
+        <option value="l">Large</option>
+        <option value="xl">Extra Large</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Legg i handlekurv">
+</form>
+
+<!-- Pop-up box -->
+<div id="popup" class="popup">
+    <div class="popup-content">
+        <p>Added to cart</p>
+        <a href="#" class="close-popup">Close</a>
+    </div>
+</div>
+CSS
+css
+Copy code
+/* Pop-up container (hidden by default) */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up content */
+.popup-content {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Display pop-up when targeted */
+#popup:target {
+    display: flex;
+}
+
+/* Close button styling */
+.close-popup {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f7471f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.close-popup:hover {
+    background-color: #d03c17;
+}

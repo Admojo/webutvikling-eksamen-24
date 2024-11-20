@@ -47,7 +47,6 @@
         </header>
         <main>
             <ul id="breadcrumbs">
-                <!-- <ul> -->
                     <li>
                         <a href="index.html"> hjem </a>
                         <i class="fa-solid fa-chevron-right"></i>
@@ -60,7 +59,6 @@
                         <a href="product.html"> produkt </a>
                         <i class="fa-solid fa-chevron-right"></i>
                     </li>
-                <!-- </ul> -->
             </ul>
             <!-- TODO: en brødsmulesti (breadcrumb) som navigerer til hjem,
                 kategori, og selve produktsiden (se bilder av produktsiden). -->
@@ -75,21 +73,20 @@
                     <aside class ="product-img-main">
                         <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-small.jpg"> 
                     </aside>
-                </section>
+                </section class = "product-info-wrapper">
                     <!-- TODO: Et område med produktnavn som overskrift, lenke til merke, pris,
                     fargeinformasjon, nedtrekksmeny for valg av størrelse, og en "legg i
                     handlekurv"-knapp (mer innehold inkluderes på høyere karakternivå). -->
                     <aside class="product-info-details">
                         <section>
-
+                            <h2>Produktnavn</h2>
+                            <h3>Merkenavn</h3>
+                            <p>5 195 kr inkl mva.</p>
+                            <p>Farge: svart</p>
                         </section>
-                        <h2>Produktnavn</h2>
-                        <h3>Merkenavn</h3>
-                        <p>5 195 kr inkl mva.</p>
-                        <p>Farge: svart</p>
                         <!-- DropDown velg størrelse -->
                          <!-- kilde: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select -->
-                        <form action="/action_page.php">
+                        <form action="#popup">
                             <label for="size"></label>
                             <select name="size" id="size">
                               <option value="xs">Extra small</option>
@@ -101,20 +98,60 @@
                             <br><br>
                             <input type="submit" value="Legg i handlekurv">
                         </form>
+                        <!-- Pop-up box: Dette er fra chat gpt -->
+                        <div id="popup" class="popup">
+                            <div class="popup-content">
+                                <p>Added to cart</p>
+                                <a href="#" class="close-popup">Close</a>
+                            </div>
+                        </div>      
                         <label class="favourite-toggle">
                             <input type="checkbox" id="favourite-toggle" hidden>
                             <i class="fa-regular fa-heart unchecked"></i>
                             <i class="fa-solid fa-heart checked"></i>
                         </label>
-                        <section>
-                            <input type="checkbox" id="dropdown-toggle" hidden>
-                            <label for="dropdown-toggle" class="dropdown-content-parent"> Materiale og vedlikeholde</label>
-                            <section id="dropdown-content">
-                                <p> A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
-                                <p> B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
+                        <section class="product-attributes">
+                            <section class="dropdown">
+                                <input type="checkbox" id="toggle-materiale" class="dropdown-toggle" hidden>
+                                <label for="toggle-materiale" class="dropdown-label">Materiale og vedlikehold</label>
+                                <section class="dropdown-content">
+                                    <p>A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
+                                    <p>B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
+                                </section>
                             </section>
+                            <section class="dropdown">
+                                <input type="checkbox" id="toggle-produktdetaljer" class="dropdown-toggle" hidden>
+                                <label for="toggle-produktdetaljer" class="dropdown-label">Produktdetaljer</label>
+                                <section class="dropdown-content">
+                                    <p>Produktetet er produsert i tråd med bærekraftige og etiske retningslinjer</p>
+                                </section>
+                            </section>
+                            <section class="dropdown">
+                                <input type="checkbox" id="toggle-storrelsetabell" class="dropdown-toggle" hidden>
+                                <label for="toggle-storrelsetabell" class="dropdown-label">Størrelsetabell</label>
+                                <section class="dropdown-content">
+                                    <p>Hvilken str trenger du?</p>
+                                </section>
+                            </section>
+                            <section class="dropdown">
+                                <input type="checkbox" id="toggle-anmeldelser" class="dropdown-toggle" hidden>
+                                <label for="toggle-anmeldelser" class="dropdown-label">Anmeldelser</label>
+                                <section class="dropdown-content">
+                                    <section class="review-stars">
+                                        <p>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-regular fa-star"></i>
+                                        </p>
+                                    </section>
+                                </section>
+                            </section>
+                        </section>
                     </aside>
-            </section>
+                </section>
+
             <!-- TODO: Produktsiden skal ha et sideområde for relaterte eller lignende produkter, med
             minimum 4 produktkort tilsvarende de som brukes på forsiden under seksjonen
             "de mest populære" (mer innehold inkluderes på høyere karakternivå). -->
