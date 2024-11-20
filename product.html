@@ -46,7 +46,22 @@
             </nav>
         </header>
         <main>
-
+            <ul id="breadcrumbs">
+                <!-- <ul> -->
+                    <li>
+                        <a href="index.html"> hjem </a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="index.html#categories"> kategori </a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li>
+                        <a href="product.html"> produkt </a>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                <!-- </ul> -->
+            </ul>
             <!-- TODO: en brødsmulesti (breadcrumb) som navigerer til hjem,
                 kategori, og selve produktsiden (se bilder av produktsiden). -->
             <section class ="product-info">
@@ -98,152 +113,119 @@
                                 <p> A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
                                 <p> B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
                             </section>
-
-                            
-                                <!-- <i class="fa-regular fa-heart unchecked"></i>
-                                <i class="fa-solid fa-heart checked"></i>
-                            </label>
-                            <li><button class="dropdown-menu-parent" class="nav-head-bar"> Materiale og vedlikehold</button>
-                                <ul id="dropdown-menu-content">
-                                    <li><p> A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p></li>
-                                    <li><p> B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p></li>
-                                </ul>
-                            </li>
-                        </section>
-                    -->
-                    <!-- 
-                        <section> -->
-                            <!-- kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible -->
-
-                            <!-- <p>A Collapsible:</p>
-                            <button type="button" class="collapsible"></button>
-                            <div class="content">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div> 
-                        </section> -->
-
                     </aside>
             </section>
             <!-- TODO: Produktsiden skal ha et sideområde for relaterte eller lignende produkter, med
             minimum 4 produktkort tilsvarende de som brukes på forsiden under seksjonen
             "de mest populære" (mer innehold inkluderes på høyere karakternivå). -->
-            <section class="product-sort" id="products">
+            <section class="slider-carousel-bottom-wrapper" id="recomendations">
                 <header>
-                    <h1> Våre mest populære produkter </h1>
+                    <h1>Lignende produkter</h1>
+                    <p> Se flere lignenden produkter <i class="fa-solid fa-arrow-right"></i></p>
                 </header>
-                <article>
-                    <p> Oppdag det beste av norsk kvalitet </p>
-                </article>
-                <section>
-                    <button href="index.html#home">New Product</button>
-                    <button>Special offers </button>
-                    <button>Best sellers </button>
+                <section class="products-list" >
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <section class="review-stars">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <section class="review-stars">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <section class="review-stars">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <section class="review-stars">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <section class="review-stars">
+                            <p>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i>
+                            </p>
+                        </section>
+                    </article>
+                    <article class="product-card">
+                        <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                        <header>
+                            <h4>Product name</h4>
+                            <p>Kr 1999</p>
+                        </header>
+                        <p>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
+                    </article>
                 </section>
             </section>
-            <section class="products-list" >
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <section class="review-stars">
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </p>
-                    </section>
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <section class="review-stars">
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </p>
-                    </section>
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <section class="review-stars">
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </p>
-                    </section>
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <section class="review-stars">
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </p>
-                    </section>
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <section class="review-stars">
-                        <p>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </p>
-                    </section>
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <p>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </p>
-                </article>
-            </section>
-            
-            
         </main>
         <footer>
                 <!-- logo -->

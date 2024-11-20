@@ -284,14 +284,18 @@ main > section > * {
 /* https://github.com/ackarlse/webutvikling2022/blob/main/responsivt-design/css/style.css */
 
 /*la til bredcrumbs og fjernet default CSSS på ul elementet med id breadcrumbs*/
-/* #breadcrumbs{
+#breadcrumbs{
+    display: flex;
     padding: 0;
     margin: 0;
+    
+    > *{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
 }
 
-
 #breadcrumbs li::after{
-    content: ">";
+    /* content: ">"; */
     margin: 0 0.2rem;
 }
 #breadcrumbs li:last-child:after{
@@ -306,7 +310,7 @@ main > section > * {
 #active{
 
 } 
-*/
+ */
 
 .dropdown-content-parent #dropdown-content {
     text-align: left;
