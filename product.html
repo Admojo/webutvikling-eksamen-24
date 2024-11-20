@@ -49,25 +49,81 @@
 
             <!-- TODO: en brødsmulesti (breadcrumb) som navigerer til hjem,
                 kategori, og selve produktsiden (se bilder av produktsiden). -->
-
-
             <section class ="product-info">
-
                 <!-- TODO: Et område med produktbilder, inkludert ett stort bilde og tre mindre. -->
                 <section class ="product-img-catalog">
-
-
+                    <aside class="product-img-details"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
+                    </aside>
+                    <aside class ="product-img-main">
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-small.jpg"> 
+                    </aside>
                 </section>
+                    <!-- TODO: Et område med produktnavn som overskrift, lenke til merke, pris,
+                    fargeinformasjon, nedtrekksmeny for valg av størrelse, og en "legg i
+                    handlekurv"-knapp (mer innehold inkluderes på høyere karakternivå). -->
+                    <aside class="product-info-details">
+                        <section>
 
-                <!-- TODO: Et område med produktnavn som overskrift, lenke til merke, pris,
-                fargeinformasjon, nedtrekksmeny for valg av størrelse, og en "legg i
-                handlekurv"-knapp (mer innehold inkluderes på høyere karakternivå). -->
-                <aside class="product-details">
-                  
-                </aside>
+                        </section>
+                        <h2>Produktnavn</h2>
+                        <h3>Merkenavn</h3>
+                        <p>5 195 kr inkl mva.</p>
+                        <p>Farge: svart</p>
+                        <!-- DropDown velg størrelse -->
+                         <!-- kilde: https://www.w3schools.com/tags/tryit.asp?filename=tryhtml_select -->
+                        <form action="/action_page.php">
+                            <label for="size"></label>
+                            <select name="size" id="size">
+                              <option value="xs">Extra small</option>
+                              <option value="s">Small</option>
+                              <option value="m">Medium</option>
+                              <option value="l">Large</option>
+                              <option value="xl">Extra Large</option>
+                            </select>
+                            <br><br>
+                            <input type="submit" value="Legg i handlekurv">
+                        </form>
+                        <label class="favourite-toggle">
+                            <input type="checkbox" id="favourite-toggle" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                        <section>
+                            <input type="checkbox" id="dropdown-toggle" hidden>
+                            <label for="dropdown-toggle" class="dropdown-content-parent"> Materiale og vedlikeholde</label>
+                            <section id="dropdown-content">
+                                <p> A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
+                                <p> B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p>
+                            </section>
 
+                            
+                                <!-- <i class="fa-regular fa-heart unchecked"></i>
+                                <i class="fa-solid fa-heart checked"></i>
+                            </label>
+                            <li><button class="dropdown-menu-parent" class="nav-head-bar"> Materiale og vedlikehold</button>
+                                <ul id="dropdown-menu-content">
+                                    <li><p> A. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p></li>
+                                    <li><p> B. Lorem ipsum jskgjklsngsølgnlngsdlkgslgjsjg</p></li>
+                                </ul>
+                            </li>
+                        </section>
+                    -->
+                    <!-- 
+                        <section> -->
+                            <!-- kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_collapsible -->
+
+                            <!-- <p>A Collapsible:</p>
+                            <button type="button" class="collapsible"></button>
+                            <div class="content">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div> 
+                        </section> -->
+
+                    </aside>
             </section>
-
             <!-- TODO: Produktsiden skal ha et sideområde for relaterte eller lignende produkter, med
             minimum 4 produktkort tilsvarende de som brukes på forsiden under seksjonen
             "de mest populære" (mer innehold inkluderes på høyere karakternivå). -->
