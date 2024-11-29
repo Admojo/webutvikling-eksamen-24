@@ -15,6 +15,8 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body id ="grid-container">
+    <!-- <body>
+        <div id ="grid-container"> -->
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -37,11 +39,11 @@
                     <button aria-label="Search button" type="submit" > <i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul>
-                    <li><a class="nav-bar-item" href=""></a></li>
+                    <!-- <li><a class="nav-bar-item" href=""></a></li> -->
                     <li><a href="index.html" > Hjem </a></li>
                     <li><a href="index.html#products" > Produkter </a></li>
                      <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
-                     <li><a class="logo" href="index.html"> Logo </a></li>
+                    <li><a class="logo" href="index.html"> Logo </a></li>
                     <li><a href="index.html#categories" > Kategorier </a></li>
                     <li><a href="index.html#contact" > Kontakt oss </a></li>
                 </ul>
@@ -70,23 +72,138 @@
                     <button>Special offers </button>
                     <button>Best sellers </button>
                 </span>
+
+                <section class="product-card">
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <header>
+                        <h4><a href="product.html">Product name </a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                </section>
+                <section class="product-card">
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <header>
+                        <h4><a href="product.html">Product name </a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                </section>
+                <section class="product-card">
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <header>
+                        <h4><a href="product.html">Product name </a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                </section>
+                <section class="product-card">
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <header>
+                        <h4><a href="product.html">Product name </a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                </section>
+
+                <!-- Alt under slettes  -->
+                <article class="product-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                    <header>
+                        <!-- <a href="product.html"><h4>Product name</h4></a> -->
+                        <h4><a href="product.html">Product name</a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <span class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                    </span> 
+                </article>
+                
+                <article class="product-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
+                    <header>
+                        <!-- <a href="product.html"><h4>Product name</h4></a> -->
+                        <h4><a href="product.html">Product name</a></h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
+                    <span class="review-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                    </span> 
+                </article>
             </section>
             <section class="products-list" >
                 <article class="product-card">
                     <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
                     <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
                     <header>
-                        <a href="product.html"><h4>Product name</h4></a>
+                        <!-- <a href="product.html"><h4>Product name</h4></a> -->
                         <h4><a href="product.html">Product name</a></h4>
                         <p>Kr 1999</p>
                     </header>
                     <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
                     <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
-                    <label class="favourite-toggle">
-                        <input type="checkbox" id="favourite-toggle" hidden>
-                        <i class="fa-regular fa-heart unchecked"></i>
-                        <i class="fa-solid fa-heart checked"></i>
-                    </label>
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
                     <span class="review-stars">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -99,77 +216,55 @@
                     <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
                     <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
                     <header>
-                        <h4>Product name</h4>
+                        <!-- <a href="product.html"><h4>Product name</h4></a> -->
+                        <h4><a href="product.html">Product name</a></h4>
                         <p>Kr 1999</p>
                     </header>
+                    <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
                     <span class="review-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                </span> 
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <span class="review-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                     </span> 
                 </article>
                 <article class="product-card">
                     <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
                     <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
                     <header>
-                        <h4>Product name</h4>
+                        <!-- <a href="product.html"><h4>Product name</h4></a> -->
+                        <h4><a href="product.html">Product name</a></h4>
                         <p>Kr 1999</p>
                     </header>
+                    <!-- <a class="logo" id="favourite-add" href="customerPage.html"><i class="fa-regular fa-heart"></i></a>
+                    <a class="logo" id="favourite-remove" href="customerPage.html"><i class="fa-solid fa-heart"></i></a> -->
+                    <span class="img-wrapper">
+                        <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Product Image" class="responsive">
+                        <label class="favourite-toggle">
+                            <input type="checkbox" class="favourite-checkbox" hidden>
+                            <i class="fa-regular fa-heart unchecked"></i>
+                            <i class="fa-solid fa-heart checked"></i>
+                        </label>
+                    </span>
                     <span class="review-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                </span> 
-                </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <span class="review-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
                     </span> 
                 </article>
-                <article class="product-card">
-                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
-                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="responsive">
-                    <header>
-                        <h4>Product name</h4>
-                        <p>Kr 1999</p>
-                    </header>
-                    <span class="review-stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </span> 
-                </article>
+                
             </section>
             <section class="category-intro" id="categories">
                 <header>
@@ -219,12 +314,104 @@
                         in culpa qui officia deserunt mollit anim id est laborum.
                     </p>
                 </section>
+                <section class="review-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="profile-picture">
+                    <header>
+                        <h4>Rolf Rullufs</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="review-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="profile-picture">
+                    <header>
+                        <h4>Rolf Rullufs</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="review-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="profile-picture">
+                    <header>
+                        <h4>Rolf Rullufs</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
+                <section class="review-card">
+                    <!-- kilde: https://www.w3schools.com/howto/howto_css_image_responsive.asp -->
+                    <img src="./assets/img/camera-binoculars-near-backpack.jpg" alt="Nature" class="profile-picture">
+                    <header>
+                        <h4>Rolf Rullufs</h4>
+                        <p>Kr 1999</p>
+                    </header>
+                    <p>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                        <br>incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                        nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore 
+                        eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt 
+                        in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </section>
             </section>
         </main>
         <footer>
                 <!-- logo -->
                 <section>
-                    <a class="logo" href="index.html"> Logo </a>
+                    <h4><a class="logo" href="index.html"> Logo </a></h4>
                     <p> Et flott ordtak om butikken vår </p>
                  </section>
                  <!-- #contact -->
@@ -251,6 +438,7 @@
                     <a href="#" class="fa fa-linkedin"></a>
                 </section>
         </footer>
+    <!-- </div> -->
     </body>
 </html>
 

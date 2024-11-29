@@ -3,12 +3,12 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang ="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <script src="https://kit.fontawesome.com/9380757250.js" crossorigin="anonymous"></script>
-        <title> Nettbutikk </title>
+        <title> Nettbutikk | Produkt </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -23,27 +23,18 @@
                 <!-- Søkefelt her  -->
                 <!-- Form er hentet herfra: https://github.com/ackarlse/Webutvikling2024Anncha/blob/main/GRID/index.html -->
                 <!-- HIdden button: https://stackoverflow.com/questions/477691/submitting-a-form-by-pressing-enter-without-a-submit-button -->
-                <form>
-                    <!-- <label for="search">search</label> -->
-                    <input aria-label="search field" type="search" id="search" name="search" placeholder="Søk her">
-                    <input aria-label="search button" type="submit" style="display: none" />
-                    <!-- <button aria-label="search button">Search</button> -->
-                </form>
-
                 <form action="/search" method="get">
                     <input aria-label="Search field" type="search" id="search"  name="search" placeholder="Søk her" required >
-                    <button aria-label="Search button" type="submit" style="display: none;" > Search </button>
+                    <button aria-label="Search button" type="submit" > <i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-
-                <!-- <ul> -->
-                    <li><a class="nav-bar-item" href=""></a></li>
+                <ul>
                     <li><a href="index.html" > Hjem </a></li>
                     <li><a href="index.html#products" > Produkter </a></li>
                      <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
-                     <a class="logo" href="index.html"> Logo </a>
+                    <li><a class="logo" href="index.html"> Logo </a></li>
                     <li><a href="index.html#categories" > Kategorier </a></li>
                     <li><a href="#contact" > Kontakt oss </a></li>
-                <!-- </ul> -->
+                </ul>
                 <div class="icon-group">
                     <a class="logo" href="customerPage.html"><i class="fa-solid fa-user"></i></a>
                     <a class="logo" href="index.html#recomendations"><i class="fa-regular fa-heart"></i></a>
@@ -72,12 +63,12 @@
                 <!-- TODO: Et område med produktbilder, inkludert ett stort bilde og tre mindre. -->
                 <section class ="product-img-catalog">
                     <aside class="product-img-details"> 
-                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
-                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
-                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-xs.png"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash-(1)-xs.png"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash-(1)-xs.png"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash-(1)-xs.png"> 
                     </aside>
                     <aside class ="product-img-main">
-                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash (1)-small.jpg"> 
+                        <img src="assets/img/frank-flores-t3836YmTfw8-unsplash-(1)-small.jpg"> 
                     </aside>
                 </section class = "product-info-wrapper">
                     <!-- TODO: Et område med produktnavn som overskrift, lenke til merke, pris,
@@ -271,36 +262,35 @@
             </section>
         </main>
         <footer>
-                <!-- logo -->
-                <section>
-                    <a class="logo" href="index.html"> Logo </a>
-                    <p> Et flott ordtak om butikken vår </p>
-                 </section>
-                 <!-- #contact -->
-                <section class="contact-us-wrapper">
-                    <header id="contact"><h4>Kontakt</h4></header>
-                    <article><i class="fa-solid fa-location-dot"></i><address><p>Adresse:</p><p>B R A veien 4, 1783 Halden</p></address></article>
-                    <article><i class="fa-solid fa-phone"></i><p>Telefon:</p><p>815 493 00</p></article>
-                    <article><i class="fa-solid fa-envelope"></i><p>E-post:</p><a href="mailto:halden@hiof.no">halden@hiof.no</a></article>
-                    <article><i class="fa-solid fa-clock"></i><p>Åpningstider:</p><p> Mandag - Fredag: 08.00 - 16.00 </p></article>
-                </section>
-                  <!-- Snarveier -->
-                <section>
-                    <header><h4>Snarveier</h4></header>
-                    <ul>
-                        <li><a href="index.html#products" > Produkter </a></li>
-                        <li><a href="index.html#categories" > Kategorier </a></li>
-                        <li><a href="index.html#contact" > Kontakt oss </a></li>
-                    </ul>
-                </section>
-                   <!-- SoMe -->
-                <section id="footer-item">   
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-linkedin"></a>
-                </section>
-        </footer>
-        <script src="" async defer></script>
+            <!-- logo -->
+            <section>
+                <h4><a class="logo" href="index.html"> Logo </a></h4>
+                <p> Et flott ordtak om butikken vår </p>
+             </section>
+             <!-- #contact -->
+            <section class="contact-us-wrapper">
+                <h4 id="contact">Kontakt</h4>
+                <article><i class="fa-solid fa-location-dot"></i><address><p>Adresse:</p><p>B R A veien 4, 1783 Halden</p></address></article>
+                <article><i class="fa-solid fa-phone"></i><p>Telefon:</p><p>815 493 00</p></article>
+                <article><i class="fa-solid fa-envelope"></i><p>E-post:</p><a href="mailto:halden@hiof.no">halden@hiof.no</a></article>
+                <article><i class="fa-solid fa-clock"></i><p>Åpningstider:</p><p> Mandag - Fredag: 08.00 - 16.00 </p></article>
+            </section>
+              <!-- Snarveier -->
+            <section>
+                <h4>Snarveier</h4>
+                <ul>
+                    <li><a href="index.html#products" > Produkter </a></li>
+                    <li><a href="index.html#categories" > Kategorier </a></li>
+                    <li><a href="index.html#contact" > Kontakt oss </a></li>
+                </ul>
+            </section>
+               <!-- SoMe -->
+            <section id="footer-item">   
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </section>
+    </footer>
     </body>
 </html>
 

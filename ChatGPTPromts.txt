@@ -1,17 +1,11 @@
-Her kommer avklaringer
-
-
-
-
-
-
-
-
+PS! utskrift alle prompts: https://chatgpt.com/share/6749b68e-64dc-800c-bda1-0e5ef9aa80bc
+(dessverre ikke tid til å laste ned alt manuelt)
+Oppsummering: Brukt mye som retningslinjer, og versjonert, spesielt CSS - da det ble knapp m tid på slutten.
 
 Kilder: 
 
 
-
+Prompt
 after the button is pressed, I want to have a pop up box with text, saying "added to cart" 
 
 how to fix?
@@ -28,6 +22,8 @@ how to fix?
                             <br><br>
                             <input type="submit" value="Legg i handlekurv">
                         </form>   
+
+
 ChatGPT said:
 ChatGPT
 To implement a pop-up box saying "Added to cart" when the button is pressed without using JavaScript, you can use pure HTML and CSS. This involves leveraging the :target pseudo-class and anchor links. Here's how you can fix it:

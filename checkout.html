@@ -1,42 +1,26 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
-<html>
+<html lang="zxx">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <script src="https://kit.fontawesome.com/9380757250.js" crossorigin="anonymous"></script>
-        <title> Nettbutikk </title>
-        <meta name="description" content="">
+        <title>Nettbutikk</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/9380757250.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
-    <body id ="grid-container">
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <body id="grid-container">
         <header class="header-global">
-             <!-- Nav bar  -->
-            <nav class ="nav-bar-global"> 
-                <!-- Søkefelt her  -->
-                <!-- Form er hentet herfra: https://github.com/ackarlse/Webutvikling2024Anncha/blob/main/GRID/index.html -->
-                <!-- HIdden button: https://stackoverflow.com/questions/477691/submitting-a-form-by-pressing-enter-without-a-submit-button -->
-                <form>
-                    <!-- <label for="search">search</label> -->
-                    <input aria-label="search field" type="search" id="search" name="search" placeholder="Søk her">
-                    <input aria-label="search button" type="submit" hidden="true" />
-                    <!-- <button aria-label="search button">Search</button> -->
+            <nav class="nav-bar-global"> 
+                <form action="/search" method="get">
+                    <input aria-label="Search field" type="search" name="search" placeholder="Søk her" required>
+                    <button aria-label="Search button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
                 <ul>
-                    <li><a class="nav-bar-item" href=""></a></li>
-                    <li><a href="index.html" > Hjem </a></li>
-                    <li><a href="index.html#products" > Produkter </a></li>
-                     <!-- logo, flyttes ut, eller droppe li wrapper? fordel med li: kan wrappe til hamburgermeny for mobil -->
-                     <a class="logo" href="index.html"> Logo </a>
-                    <li><a href="index.html#categories" > Kategorier </a></li>
-                    <li><a href="#contact" > Kontakt oss </a></li>
+                    <li><a href="index.html">Hjem</a></li>
+                    <li><a href="index.html#products">Produkter</a></li>
+                    <li><a class="logo" href="index.html">Logo</a></li>
+                    <li><a href="index.html#categories">Kategorier</a></li>
+                    <li><a href="#contact">Kontakt oss</a></li>
                 </ul>
                 <div class="icon-group">
                     <a class="logo" href="customerPage.html"><i class="fa-solid fa-user"></i></a>
@@ -45,140 +29,139 @@
                 </div>  
             </nav>
         </header>
+
         <main>
+            <!-- Shopping Bag Section -->
+            <section class="cart">
+                <h2>1. Shoppingbagen din</h2>
+                <!-- Content for the cart -->
+            </section>
 
-            <!-- TODO: Shoppingbag kommer her -->
-           <section class = "cart">
-
-           </section>
-
-           
-           <section class="customer-info-wrapper">
-            <section><h1>2. Dine Opplysninger</h1></section>
-            <!-- Kilde / inspirasjon: https://www.w3schools.com/html/html_forms.asp -->
-                <!-- <form href="/checkout.html#delivery"> -->
-                <form href="/checkout.html#delivery">
+            <!-- Customer Info Section -->
+            <section class="customer-info-wrapper">
+                <h2>2. Dine opplysninger</h2>
+                <form action="checkout.html#delivery">
                     <section class="customer-name">
                         <header><h3>Leveringsadresse</h3></header>
-                        <label for="fname">Fornavn</label><br>
-                        <input type="text" id="fname" name="fname" value="Nora *"><br>
-                        <label for="lname">Etternavn</label><br>
-                        <input type="text" id="lname" name="lname" value="Nordmann *"><br><br>
-                    </section>
-                    <section class="customer-delivery-adress">
-                        <label for="street">Gateaddresse</label><br>
-                        <input type="text" id="street" name="street" value=" B R A veien 4 *"><br>
-                    </section>
+                        <label for="fname">Fornavn</label>
+                        <input type="text" id="fname" name="fname" value="Nora *">
+                        <label for="lname">Etternavn</label>
+                        <input type="text" id="lname" name="lname" value="Nordmann *">
+                    </section> <!-- Missing closing tag added here -->
+
                     <section>
-                        <!-- PostNr -> Endre til "nedtrekksliste" -->
-                        <label for="zipcode">Postnummer</label><br>
-                        <input type="text" id="zipcode" name="zipcode" value="1783 *"><br><br>
-                        <label for="postal">Poststed</label><br>
-                        <input type="text" id="postal" name="postal" value="Halden *"><br><br>
-                    </section>
+                        <label for="street">Gateadresse</label>
+                        <input type="text" id="street" name="street" value="B R A veien 4 *">
+                        <label for="zipcode">Postnummer</label>
+                        <input type="text" id="zipcode" name="zipcode" value="1783 *">
+                        <label for="postal">Poststed</label>
+                        <input type="text" id="postal" name="postal" value="Halden *">
+                    </section> <!-- Missing closing tag added here -->
+
                     <section class="customer-contact-info">
                         <header><h3>Kontaktinformasjon</h3></header>
-                        <label for="email">E-post</label><br>
-                        <input type="text" id="email" name="email" value="Nora.nordmann@hiof.no *"><br><br>
-                        <label for="phone">Telefon</label><br>
-                        <input type="text" id="phone" name="phone" value="+47 23 ** ** 21"><br><br>
-                    </section>
+                        <label for="email">E-post</label>
+                        <input type="text" id="email" name="email" value="Nora.nordmann@hiof.no *">
+                        <label for="phone">Telefon</label>
+                        <input type="text" id="phone" name="phone" value="+47 23 ** ** 21">
+                    </section> <!-- Missing closing tag added here -->
                     <input type="submit" value="Lagre">
-                    <!-- <input type="submit" value="Avbryt"> -->
-                </form>
-                <input type="submit" value="Opprett profil" href="customerPage.html#create-profile">
-           </section>
+                </form> <!-- Missing closing tag added here -->
 
-           <section class="delivery-info-wrapper" id="delivery" >
-            <section><h1>3. Levering</h1></section>
-            <!-- Kilde / inspirasjon: https://www.w3schools.com/html/html_forms.asp -->
-                <form href="/checkout.html#payment">
+                <form action="customerPage.html#create-profile" method="get">
+                    <input type="submit" value="Opprett profil">
+                </form>
+            </section>
+
+            <!-- Delivery Options Section -->
+            <section class="delivery-info-wrapper" id="delivery">
+                <h2>3. Levering</h2>
+                <form action="checkout.html#payment">
                     <section class="delivery-options">
                         <header><h3>Leveringsvalg</h3></header>
-                            <article class="delivery-item">
-                                <section class="delivery-item-detail">
-                                    <aside>
-                                        <input type="radio" id="expresshome" name="delivery_method" value="expresshome">
-                                        <label for="expresshome">Express hjemlevering </label><br>
-                                    </aside>
-                                    <aside>
-                                        <p> 59 kr </p>
-                                        <i class="fa-solid fa-truck"></i>
-                                    </aside>
-                                </section>
-                                <section class="delivery-item-detail"><p>3 - 4 Virkedager</p></section>
-                                <section class="delivery-item-detail"><p> Bestille før kl 16.00 for raskere levereing. </p></section>
-                            </article>
-                            <article class="delivery-item">
-                                <section class="delivery-item-detail">
-                                    <aside>
-                                        <input type="radio" id="expresshome" name="delivery_method" value="expresshome">
-                                        <label for="expresshome">Express pakke til utlevering </label><br>
-                                    </aside>
-                                    <aside>
-                                        <p> 59 kr </p>
-                                        <i class="fa-brands fa-dhl"></i>
-                                    </aside>
-                                </section>
-                                <section class="delivery-item-detail"><p>1- 3 Virkedager</p></section>
-                                <!-- <section class="delivery-item-detail"><p> Bestille før kl 16.00 for raskere levereing. </p></section> -->
-                            </article>
-                            <article class="delivery-item">
-                                <section class="delivery-item-detail">
-                                    <aside>
-                                        <input type="radio" id="expresshome" name="delivery_method" value="expresshome">
-                                        <label for="expresshome">Standard hjemlevering </label><br>
-                                    </aside>
-                                    <aside>
-                                        <p> Gratis! </p>
-                                        <i class="fa-solid fa-gift"></i>
-                                    </aside>
-                                </section>
-                                <section class="delivery-item-detail"><p> 5 - 8 Virkedager</p></section>
-                                <section class="delivery-item-detail"><p> Bestille før kl 16.00 for raskere levereing. </p></section>
-                            </article>
+
+                        <!-- Delivery Item 1 -->
+                        <article class="delivery-item">
+                            <section class="delivery-item-detail">
+                                <aside>
+                                    <input type="radio" id="expresshome-1" name="delivery_method" value="expresshome-1">
+                                    <label for="expresshome-1">Express hjemlevering</label>
+                                </aside>
+                                <aside>
+                                    <p>59 kr</p>
+                                    <i class="fa-solid fa-truck"></i>
+                                </aside>
+                            </section> <!-- Missing closing tag added here -->
+                            <section class="delivery-item-detail">
+                                <p>3 - 4 Virkedager</p>
+                            </section> <!-- Missing closing tag added here -->
+                        </article> <!-- Missing closing tag added here -->
+
+                        <!-- Delivery Item 2 -->
+                        <article class="delivery-item">
+                            <section class="delivery-item-detail">
+                                <aside>
+                                    <input type="radio" id="expresshome-2" name="delivery_method" value="expresshome-2">
+                                    <label for="expresshome-2">Express pakke til utlevering</label>
+                                </aside>
+                                <aside>
+                                    <p>59 kr</p>
+                                    <i class="fa-brands fa-dhl"></i>
+                                </aside>
+                            </section> <!-- Missing closing tag added here -->
+                            <section class="delivery-item-detail">
+                                <p>1- 3 Virkedager</p>
+                            </section> <!-- Missing closing tag added here -->
+                        </article> <!-- Missing closing tag added here -->
+
+                        <!-- Delivery Item 3 -->
+                        <article class="delivery-item">
+                            <section class="delivery-item-detail">
+                                <aside>
+                                    <input type="radio" id="expresshome-3" name="delivery_method" value="expresshome-3">
+                                    <label for="expresshome-3">Standard hjemlevering</label>
+                                </aside>
+                                <aside>
+                                    <p>Gratis!</p>
+                                    <i class="fa-solid fa-gift"></i>
+                                </aside>
+                            </section> <!-- Missing closing tag added here -->
+                            <section class="delivery-item-detail">
+                                <p>5 - 8 Virkedager</p>
+                            </section> <!-- Missing closing tag added here -->
+                        </article> <!-- Missing closing tag added here -->
+                    </section> <!-- Missing closing tag added here -->
                     <input type="submit" value="Bekreft leveringsalternativ">
-                </form>
-                <!-- </form> -->
-           </section>
-           <section class="customer-payment-wrapper">
-            <section><h1>4. Betaling</h1></section>
-            <!-- Kilde / inspirasjon: https://www.w3schools.com/html/html_forms.asp -->
-                <form href="process.html#reciept">
+                </form> <!-- Missing closing tag added here -->
+            </section>
+
+            <!-- Payment Section -->
+            <section class="customer-payment-wrapper">
+                <h2>4. Betaling</h2>
+                <form action="process.html#reciept">
                     <section class="card-number">
                         <header><h3>Betal med kort</h3></header>
-                        <label for="cardNumber">Kortnummer</label><br>
-                        <input type="text" id="cardNumber" name="cardNumber" value=" 45358398930893 *"><br>
-                    </section>
-                    <section>
-                        <label for="zipcode">Utløpsdato</label><br>
-                        <input type="text" id="zipcode" name="card-expire" value="MM/YY"><br><br>
-                        <label for="card-cvc">CVC/CVV</label><br>
-                        <input type="text" id="card-cvc" name="card-cvc" value="CVC/CVV"><br><br>
-                    </section>
+                        <label for="cardNumber">Kortnummer</label>
+                        <input type="text" id="cardNumber" name="cardNumber" value="45358398930893 *">
+                        <label for="card-expire">Utløpsdato</label>
+                        <input type="text" id="card-expire" name="card-expire" value="MM/YY">
+                        <label for="card-cvc">CVC/CVV</label>
+                        <input type="text" id="card-cvc" name="card-cvc" value="CVC/CVV">
+                    </section> <!-- Missing closing tag added here -->
                     <input type="submit" value="Fullfør kjøp">
-                </form>
-                    <section id="payment">
-                        <article><p> Takk for at du handler hos oss og støtter Norsk-produserte varer</p></article>
-                        <form>
-                            <input type="checkbox" id="newsletter" name="newsletter" value="newsletter">
-                            <label for="newsletter"> Ja, takk! Send meg gjerne nyhetsbrev.</label><br>
-                            <input type="checkbox" id="sms-offers" name="sms-offers" value="sms-offers">
-                            <label for="sms-offers"> Jeg ønsker å motta tekstmeldinger med tilbud og nyheter </label><br>
-                        </form>
-                    </section>
-                <!-- </form> -->
-           </section>
+                </form> <!-- Missing closing tag added here -->
+            </section>
         </main>
+
         <footer>
             <!-- logo -->
-             <section>
-                <a class="logo" href="index.html"> Logo </a>
+            <section>
+                <h4><a class="logo" href="index.html"> Logo </a></h4>
                 <p> Et flott ordtak om butikken vår </p>
              </section>
              <!-- #contact -->
             <section class="contact-us-wrapper">
-                <header id="contact"><h4>Kontakt</h4></header>
+                <h4 id="contact">Kontakt</h4>
                 <article><i class="fa-solid fa-location-dot"></i><address><p>Adresse:</p><p>B R A veien 4, 1783 Halden</p></address></article>
                 <article><i class="fa-solid fa-phone"></i><p>Telefon:</p><p>815 493 00</p></article>
                 <article><i class="fa-solid fa-envelope"></i><p>E-post:</p><a href="mailto:halden@hiof.no">halden@hiof.no</a></article>
@@ -186,7 +169,7 @@
             </section>
               <!-- Snarveier -->
             <section>
-                <header><h4>Snarveier</h4></header>
+                <h4>Snarveier</h4>
                 <ul>
                     <li><a href="index.html#products" > Produkter </a></li>
                     <li><a href="index.html#categories" > Kategorier </a></li>
@@ -198,11 +181,7 @@
                 <a href="#" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-instagram"></a>
                 <a href="#" class="fa fa-linkedin"></a>
-            </section>	
-        </footer>
-        <script src="" async defer></script>
+            </section>
+    </footer>
     </body>
 </html>
-
-
-

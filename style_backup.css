@@ -1,0 +1,609 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Familjen+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Reem+Kufi+Fun:wght@400;500;600;700&family=Yantramanav:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+/*Fargepalett */
+:root {
+    --color-1: #DAF7A6;
+    --color-2: #FFC300;
+    --color-3: #FF5733;
+    --color-4: #C70039;
+    --color-5: #900C3F;
+    --color-6: #581845;
+    --color-7: #fff4eb;
+    --color-8: #C54126;
+    --color-9: #B2D8F7;
+    --color-10: #EEC8C1;
+    --color-11: #FAFF70;
+    --color-12: #114B5F;
+    --color-13: #FFFCF5;
+    --color-14: #FA573E; /* Renamed duplicate */
+    --color-15: #DAA288;
+    --color-16: #280003;
+    --color-17: #C2847A;
+    --color-18: #2273f3;
+    --color-19: #314029;
+    --color-20: #737450;
+}
+
+
+*{ 
+	box-sizing: border-box;
+} 
+
+html{
+	font-size: calc(1em + 1vw);
+}
+
+body, html{
+	height: 100%;
+	margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Er det noe vits i å ha med det over ^ */
+
+body{
+    display: flex;
+    flex-direction: column;
+    /* font-size: 16px; */
+    /* margin-left: 1rem;
+    margin-right: 1rem; */
+    /* padding: 1rem;  */
+     
+    }
+
+h1{
+    font-size: 1.75rem;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+/*DESKTOP*/
+@media only screen and (min-width: 800px) {
+    #grid-container {
+        grid-template-columns: 1fr 3fr 1fr;
+    }
+
+    .fa-burger {
+        display: none; /* Skjuler hamburger-menyikonet på større skjermer */
+    }
+    #menu {
+        display: flex !important; /* Viser hovedmenyen som en flexbox på større skjermer */
+    }
+}
+
+/*MOBIL*/
+@media only screen and (max-width: 800px) {
+    #menu {
+        display: none; /* Skjuler hovedmenyen på mindre skjermer */
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
+        grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
+    }
+
+    header, main, aside, footer {
+        grid-column: 1/2; /* Sørger for at alle elementer strekker seg over hele bredden på mindre skjermer */
+    }
+
+    header {
+        grid-row: 1/2; /* Plasserer headeren øverst på siden */
+    }
+    
+    main {
+        grid-row: 2/3; /* Plasserer hovedinnholdet i andre rad */
+    }
+    
+    aside {
+        display: none; /* Skjuler sideinnholdet (aside) på mindre skjermer */
+    }
+    
+    footer {
+        grid-row: 3/4; /* Plasserer fotnoten nederst på siden */
+    }
+}
+
+#grid-container {
+    display: grid;
+    gap: 5rem 10rem;
+    /* grid-template-areas: "header" 
+                        "main"
+                        "aside" "aside"
+                        "footer"; */
+    /* grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: repeat(3, auto); */
+
+    grid-template-columns: 1fr; /* Endrer layout til én kolonne på mobil */
+    grid-template-rows: auto auto auto auto; /* Setter fire rader for responsiv oppsett */
+
+    row-gap: 2rem;
+}
+
+/* #grid-container > main > * {
+    padding: 1rem;
+} */
+
+main {
+    grid-column-start: 2;
+    grid-column-end: 3; /* Hovedinnholdet er plassert i den midterste kolonnen */
+    grid-row-start: 2;
+    grid-row-end: 3; /* Plasserer hovedinnholdet i den andre raden */
+}
+
+main > section > header > h1 {
+    display: flex;
+    /* display: grid; */
+    justify-content: center;
+}
+
+main > section > * {
+    background-color: rgba(193, 141, 150, 0.092);
+
+    section {
+        border: 2px solid rgba(176, 105, 105, 0.39);
+    }
+}
+
+.header-global {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    /* flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline; */
+}
+
+.header-global > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-bar-global > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(233, 156, 169, 0.214);
+}
+
+.slider-carousel-top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-sort{
+    /* display: grid; */
+    justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    gap: 1rem;
+
+}
+
+.product-sort > * {
+    display: flex;
+    margin: 0.5rem 0;
+    text-align: center;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0.5rem;
+    gap: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-sort > section > button {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.products-list{
+    display: flex;
+    /* display: grid; */
+    align-self: auto;
+
+}
+
+.products-list > .product-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 0;
+    text-align: center;
+    /* justify-content: space-between; */
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* .product-card {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-1);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    
+} */
+
+.product-card {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    /* padding: 1rem;  */
+    /* margin: 1rem; */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Add a subtle border */
+    border-radius: 10px; /* Rounded corners */
+    background-color: #fff; /* Ensure a neutral background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+ /* .product-card > #favourite {
+    color: black;
+    ::after {
+        color: red;
+    }
+ } */
+
+.product-card > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.product-card > header {
+    /* display: grid; */
+    justify-content: space-evenly;
+    
+}
+
+.product-card > .review-stars{
+    display: flex;
+    /* display: grid; */
+    /* justify-content: space-between; */
+}
+
+/* info-område om produkt - wrapper for img section og  info wrapper */
+.product-info > *{
+    display: flex;
+    border: 10px solid rgba(11, 172, 73, 0.433);
+
+
+}
+
+.product-img-catalog > * {
+    border: 5px solid rgba(18, 8, 217, 0.87);
+
+    /* > product-img-details {
+        border: 10px dotted rgba(217, 20, 27, 0.797);
+    } */
+}
+
+.product-info-wrapper {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    > * {
+        border: 1px solid rgba(77, 58, 186, 0.1);
+    }
+}
+
+/* Wrapper for alle produkt spesifikasjons-dropdown-titler */
+.product-attributes {
+    background-color: #4338402c;
+
+}
+
+.category-intro {
+    display: flex;
+    /* display: grid; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-intro > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    justify-items: center;
+}
+
+.category-list {
+    display: flex;
+    /* display: grid; */
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.category-list > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.slider-carousel-bottom-wrapper {
+    display: flex;
+    /* display: grid; */
+    justify-content: center;
+
+    > *{
+        justify-content: flex-start;
+        max-width: auto;
+    }
+}
+
+.slider-carousel-bottom-wrapper > header {
+    border: 1px solid rgba(170, 12, 12, 0.759);
+
+    > * {
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        background-color: aliceblue;
+    }
+}
+
+.slider-carousel-bottom-wrapper > .review-card {
+    margin: 10px 0;
+    text-align: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-card {
+    display: flex;
+    justify-items: block;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(204, 151, 90);
+
+        .profile-picture{
+            width: auto;
+            height: fit-content;
+        }
+        header {
+            align-self: baseline;
+        }
+        #review-stars{
+            align-items: baseline;
+        }
+
+}
+
+.review-card > * {
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* Låne kode til BreadCrumbs */
+/* https://github.com/ackarlse/webutvikling2022/blob/main/responsivt-design/css/style.css */
+
+/*la til bredcrumbs og fjernet default CSSS på ul elementet med id breadcrumbs*/
+#breadcrumbs{
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+    > *{
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
+#breadcrumbs li::after{
+    /* content: ">"; */
+    margin: 0 0.2rem;
+}
+#breadcrumbs li:last-child:after{
+    content: "";
+    margin: 0 0.2rem;
+}
+#breadcrumbs li:last-child{
+    font-weight: 900;;
+}
+/*legge til en active-page id på meny punktet som er landingssiden
+
+#active{
+
+} 
+ */
+
+.favourite-toggle {
+    position: relative;
+    display: inline-flex;
+    cursor: pointer;
+
+    .unchecked {
+        color: black;
+        display: inline;
+    }
+
+    .checked {
+        color: red;
+        display: none;
+    }
+}
+
+.favourite-toggle input:checked ~ .unchecked {
+    display: none; 
+}
+
+.favourite-toggle input:checked ~ .checked {
+    display: inline; 
+} 
+
+ /* Pop-up container (hidden by default) */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pop-up content */
+.popup-content {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Display pop-up when targeted */
+#popup:target {
+    display: flex;
+}
+
+/* Close button styling */
+.close-popup {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #f7471f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.close-popup:hover {
+    background-color: #d03c17;
+}
+
+/* 
+.dropdown-label .dropdown-content {
+    text-align: left;
+}
+
+.dropdown-label {
+    font-family: 'Space Mono', monospace; 
+    display: inline-block;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    
+}
+
+.dropdown-content {
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    max-height: 0;
+}
+
+.dropdown-content {
+    overflow: hidden;
+}
+
+.dropdown-toggle:checked ~ .dropdown-content {
+    max-height: 200px;
+} */
+
+/* .dropdown-label:active > .dropdown-content {
+    display: block;
+}  */
+
+/* .dropdown-content p {
+    background-color: white;
+    color: #555;
+    margin: 0.5rem 0; 
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.2s ease, color 0.2s ease;
+} */
+
+/* General styles for dropdown */
+.dropdown {
+    margin-bottom: 1rem;
+}
+
+/* Label for dropdown */
+.dropdown-label {
+    font-family: 'Space Mono', monospace; /* Optional: Add a custom font */
+    padding: 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    /* background-color: #f5f5f5; */
+    border: 1px solid #362222;
+    border-radius: 5px;
+}
+
+/* Dropdown content (initially hidden) */
+.dropdown-content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    /* margin-top: 0.5rem; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: white;
+    color:#2273f3;
+}
+
+/* Show content when checkbox is checked */
+.dropdown-toggle:checked + .dropdown-label + .dropdown-content {
+    max-height: 500px; /* Adjust height based on content size */
+}
+
+/* Dropdown content items */
+.dropdown-content p {
+    color: #555;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    transition: 0.2s ease, color 0.2s ease;
+}
+
+/* Hover effect for dropdown content items */
+.dropdown-content p:hover {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+
+footer {
+    display: flex;
+    background-color: rgba(255, 228, 196, 0.173);
+    justify-content: flex-start;
+    align-items: baseline;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+footer > * {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+    max-width: 20rem;
+  }
+
+
+.process-purchase, .process-create-profile{
+    background-color: green;
+}
+
+#create-profile {
+    background-color: aliceblue;
+}
+
+.profile-picture{
+    clip-path: circle(50% at 50% 50%);
+    max-width: 4rem;
+
+}
+
+/* ABC Diatype, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 
+Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+
+
+Roobert, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, 
+Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
