@@ -26,10 +26,16 @@
                 <form>
                     <!-- <label for="search">search</label> -->
                     <input aria-label="search field" type="search" id="search" name="search" placeholder="Søk her">
-                    <input aria-label="search button" type="submit" hidden="true" />
+                    <input aria-label="search button" type="submit" style="display: none" />
                     <!-- <button aria-label="search button">Search</button> -->
                 </form>
-                <ul>
+
+                <form action="/search" method="get">
+                    <input aria-label="Search field" type="search" id="search"  name="search" placeholder="Søk her" required >
+                    <button aria-label="Search button" type="submit" style="display: none;" > Search </button>
+                </form>
+
+                <!-- <ul> -->
                     <li><a class="nav-bar-item" href=""></a></li>
                     <li><a href="index.html" > Hjem </a></li>
                     <li><a href="index.html#products" > Produkter </a></li>
@@ -37,7 +43,7 @@
                      <a class="logo" href="index.html"> Logo </a>
                     <li><a href="index.html#categories" > Kategorier </a></li>
                     <li><a href="#contact" > Kontakt oss </a></li>
-                </ul>
+                <!-- </ul> -->
                 <div class="icon-group">
                     <a class="logo" href="customerPage.html"><i class="fa-solid fa-user"></i></a>
                     <a class="logo" href="index.html#recomendations"><i class="fa-regular fa-heart"></i></a>
